@@ -1,30 +1,139 @@
 header{
     height: 100px;
-    background-color: rgb(19, 132, 237);
+    background-color: rgba(6, 37, 196, 0.811);
     display: flex;
-    align-items: center;
 }
-.logo {
-    margin-left: 20px;
-    height: 150px;
-    width: 180px;
-    object-fit: contain;
+li{
+    color: white;
+    list-style-type: none;
+    padding-left: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
 }
-.navbar {
-    flex: 1;
+ul{
+   padding: 45px  20%;
+    margin:0px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+body{
+   margin: 0px;
+}
+.logo-ls{
+    padding-left: 50px;
+}
+.land-img{
+position: absolute;
+}
+.land-title{
+    position:relative ;
+    color: white;
+    font-size: 42px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.disc{
+    width: 200px;
+    padding: 200px;
+    
+}
+.card{
+    width: 300px;
+    height: 400px;
+    margin-left: 30px;
+}
+.card:hover{
+    width: 300px;
+    height: 450px;
+   border: 1px solid black;
+    margin-left: 30px;
+    cursor: pointer;
+    padding: 3px;
+}
+.about{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:50px
+}
+.about::first-letter{
+padding-left: 50px;
+}
+footer{
+    background-color: rgba(4, 55, 241, 0.486);
+    margin-top: 200px;
+    padding: 40px 0 20px;
+}
+
+/* Footer layout for interior decors page */
+.site-footer{
+    color: #cbd5e1;
+}
+.footer-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+    padding: 0 20px;
+}
+.footer-col h4{
+    color: #fff;
+    margin-bottom: 12px;
+}
+.footer-logo{
+    height: 50px;
+    width: auto;
+    margin-bottom: 12px;
+}
+.links-footer ul{
     list-style: none;
     padding: 0;
     margin: 0;
 }
-li{
-    color: blanchedalmond;
-    list-style-type: none;
-    padding-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+.links-footer li{
+    margin-bottom: 8px;
+}
+.links-footer a{
+    color: #cbd5e1;
+}
+.newsletter-form{
+    display: flex;
+    gap: 8px;
+}
+.newsletter-form input[type="email"]{
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #334155;
+    background: #0b1220;
+    color: #e6eef8;
+}
+.newsletter-form button{
+    background: #2563eb;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.footer-bottom{
+    max-width: 1100px;
+    margin: 20px auto 0;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    text-align: center;
+    color: #94a3b8;
+}
+
+@media (max-width: 800px){
+    .footer-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 480px){
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
 }
 a{
-    color:azure;
+    color: white;
+    text-decoration: none;
 }
